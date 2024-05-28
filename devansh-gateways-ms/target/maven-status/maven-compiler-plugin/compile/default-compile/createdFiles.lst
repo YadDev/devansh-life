@@ -1,0 +1,6 @@
+com\transport\transit\admin\filters\PreFilter.class
+com\transport\transit\admin\ZuulApiGetWayRunner.class
+com\transport\transit\admin\filters\RouteFilter.class
+com\transport\transit\admin\filters\CORSFilter.class
+com\transport\transit\admin\filters\PostFilter.class
+com\transport\transit\admin\filters\ErrorFilter.class

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="devansh-customer" />
+        <module name="devansh-gateway-service" />
+        <module name="devansh-product" />
+        <module name="devansh-eureka-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="devansh-api-gateway" target="17" />
+      <module name="devansh-auth" target="1.5" />
+      <module name="devansh-eureka" target="17" />
+      <module name="devansh-gateway-server" target="17" />
+      <module name="spring-boot-microservice" target="1.5" />
+      <module name="transport-admin" target="17" />
+      <module name="transport-beans" target="17" />
+      <module name="transport-etm" target="17" />
+      <module name="transport-mis" target="17" />
+      <module name="transport-passsytem" target="17" />
+      <module name="transport-persistence" target="17" />
+      <module name="transport-util" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="devansh-api-gateway" options="-parameters" />
+      <module name="devansh-auth" options="" />
+      <module name="devansh-customer" options="" />
+      <module name="devansh-eureka" options="-parameters" />
+      <module name="devansh-eureka-service" options="" />
+      <module name="devansh-gateway-server" options="-parameters" />
+      <module name="devansh-gateway-service" options="" />
+      <module name="devansh-product" options="" />
+      <module name="transport-admin" options="-parameters" />
+      <module name="transport-beans" options="-parameters" />
+      <module name="transport-etm" options="-parameters" />
+      <module name="transport-mis" options="-parameters" />
+      <module name="transport-passsytem" options="-parameters" />
+      <module name="transport-persistence" options="-parameters" />
+      <module name="transport-util" options="-parameters" />
+    </option>
+  </component>
+</project>

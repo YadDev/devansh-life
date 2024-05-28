@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/devansh-auth-ms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-auth-ms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-customer-ms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-customer-ms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-eureka-ms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-eureka-ms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-gateways-ms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-gateways-ms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-product-ms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/devansh-product-ms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transport-beans/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transport-beans/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transport-etm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transport-mis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transport-passsytem/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transport-persistence/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transport-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/transport-util/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
