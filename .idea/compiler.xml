@@ -8,13 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="devansh-customer" />
         <module name="devansh-gateway-service" />
+        <module name="devansh-auth" />
         <module name="devansh-product" />
         <module name="devansh-eureka-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="devansh-api-gateway" target="17" />
-      <module name="devansh-auth" target="1.5" />
       <module name="devansh-eureka" target="17" />
       <module name="devansh-gateway-server" target="17" />
       <module name="spring-boot-microservice" target="1.5" />
@@ -30,13 +30,13 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="devansh-api-gateway" options="-parameters" />
-      <module name="devansh-auth" options="" />
+      <module name="devansh-auth" options="-parameters" />
       <module name="devansh-customer" options="" />
       <module name="devansh-eureka" options="-parameters" />
       <module name="devansh-eureka-service" options="" />
       <module name="devansh-gateway-server" options="-parameters" />
       <module name="devansh-gateway-service" options="" />
-      <module name="devansh-product" options="" />
+      <module name="devansh-product" options="-parameters" />
       <module name="transport-admin" options="-parameters" />
       <module name="transport-beans" options="-parameters" />
       <module name="transport-etm" options="-parameters" />
