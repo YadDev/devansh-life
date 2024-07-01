@@ -1,12 +1,15 @@
 package com.transport.transit.admin.controllers;
 
 
+import com.transport.transit.admin.models.Price;
 import com.transport.transit.admin.models.Product;
 import com.transport.transit.admin.models.Variant;
 import com.transport.transit.admin.payload.request.ProductRequest;
 import com.transport.transit.admin.payload.request.ProductVariantRequest;
+import com.transport.transit.admin.repository.PriceRepository;
 import com.transport.transit.admin.repository.ProductRepository;
 import com.transport.transit.admin.repository.VariantRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +26,8 @@ public class ProductController {
   @Autowired
   VariantRepository variantRepository;
 
+  @Autowired
+  PriceRepository priceRepository;
 
 
   @PostMapping("/product")
@@ -58,5 +63,32 @@ public class ProductController {
       return ResponseEntity.ofNullable(e.getMessage());
     }
 
+  }
+
+  @GetMapping("/product/{key}")
+  public ResponseEntity<?> getProductByProdtName(@PathVariable("key") String productName) {
+    try{
+      System.out.println("Product Key "+productName);
+      Optional<Product> opt = productRepository.findProductByKey(productName);
+      if(opt.isEmpty())
+        return ResponseEntity.noContent().build();
+      Product existingCustomer = opt.get();
+      return ResponseEntity.ok(existingCustomer);
+    }catch(Exception e){
+      return ResponseEntity.ofNullable(e.getMessage());
+    }
+  }
+  @GetMapping("/price/{key}")
+  public ResponseEntity<?> getProductPrice(@PathVariable("key") String productKey) {
+    try {
+      System.out.println("Product Key " + productKey);
+      Optional<Price> opt = priceRepository.priceOfProductByKey(productKey,true);
+      if (opt.isEmpty())
+        return ResponseEntity.noContent().build();
+      Price prodPrice = opt.get();
+      return ResponseEntity.ok(prodPrice);
+    } catch (Exception e) {
+      return ResponseEntity.ofNullable(e.getMessage());
+    }
   }
 }

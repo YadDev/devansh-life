@@ -8,6 +8,7 @@ import jakarta.validation.constraints.Pattern;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 
 @Entity
@@ -46,7 +47,16 @@ public class Customer {
     private String password;
 
 
-    private String address;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "customer_address_mapping",
+            joinColumns = {
+                    @JoinColumn(name = "customer_id", referencedColumnName = "customerId")
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(name = "address_id", referencedColumnName = "addressId")
+            })
+    private Map<String, Address> address = new HashMap<>();
+
 
 
     public Integer getCustomerId() {
@@ -97,11 +107,11 @@ public class Customer {
         this.password = password;
     }
 
-    public String getAddress() {
+    public Map<String, Address> getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Map<String, Address> address) {
         this.address = address;
     }
 }

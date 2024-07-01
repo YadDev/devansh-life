@@ -10,8 +10,8 @@ import jakarta.validation.constraints.Pattern;
 public class Address {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer addressId;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String addressId;
 
     @Pattern(regexp = "[A-Za-z0-9\\s-]{3,}", message = "Not a valid street no")
     private String streetNo;
@@ -33,6 +33,7 @@ public class Address {
     @NotNull(message = "Pincode cannot be null")
     @Pattern(regexp = "[0-9]{6}", message = "Pincode not valid. Must be 6 digits")
     private String pincode;
+
 
 
     @ManyToOne(cascade = CascadeType.ALL)
